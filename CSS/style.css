@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #EFEFEF;
+}
+
+/* hearder styling */
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.header-content{
+    position: relative;
+    text-align: center;
+    background-color: white;
+}
+.header-content .logo img{
+    height: 60px;
+}
+.header-content .fa-chevron-left{
+    position: absolute;
+    left: 7%;
+    top: 24%;
+}
+/* progress styling */
+.progress{
+    /* border: 1px solid red; */
+    margin: 3rem auto;
+    
+}
+.progress ul{
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+}
+.progress ul li{
+    display: inline-block;
+    position: relative;
+}
+.progress ul li .progress_icon{
+    background-color: #ccc;
+    padding: 8px;
+    color: #000;
+    border-radius: 50%;
+}
+.progress ul li .progress_icon::after{
+    content: '';
+    background-color: #ccc;
+    height: 5px;
+    width: 120px;
+    left: 0;
+    top: 35%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+.progress ul li:nth-child(1) .progress_icon{
+    background-color: #44B954;
+    color: #fff;
+}
+.progress ul li:nth-child(1) .progress_icon::after{
+    background-color: #44B954;
+}
+.progress ul li:nth-child(2) .progress_icon{
+    background-color: #44B954;
+    color: #fff;
+}
+ul li:last-child .progress_icon::after{
+    background-color: hotpink;
+    width: 10px;
+}
+/* table styling */
+.items_container{
+    background-color: #fff;
+    padding: 20px 5px;
+    border-radius: 10px;
+    box-shadow: 0.39110854268074036px 1.1733256578445435px 1.955542802810669px 0px #00000024;
+}
+table{
+    width: 100%;
+}
+
+.table_heading{
+    text-align: left;
+    padding:5px;
+    
+}
+.common{
+    /* border: 1px solid green; */
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(158, 156, 156);
+}
+.tabledata{
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 15px 0;
+}
+.tabledata p{
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.tabledata span{
+    font-size: 13px;
+    color: rgb(161, 147, 147);
+}
+.product_icon{
+    
+    padding-right: 10px;
+}
+.item1{
+    color: orangered;
+}
+.item2{
+    color: rgb(172, 12, 12);
+}
+.item3{
+    color: rgb(97, 133, 25);
+}
+/* Delivery section */
+.delivery-containeer{
+    margin: 2rem 0;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    padding: 1rem 0;
+    box-shadow: 0.39110854268074036px 1.1733256578445435px 1.955542802810669px 0px #00000024;
+}
+.delivery{
+    position: relative;
+    margin: 2rem 0.5rem;
+    width: 80%;
+}
+.delivery h3{
+    margin-bottom: 10px;
+}
+.delivery p{
+    color: #474747;
+    font-size: 14px;
+}
+.delivery span{
+    border: 1px solid #39B54A;
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #989898;
+}
+.delivery-containeer .edit_icon{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 85%;
+    padding: 10px;
+    background-color: #C5E2B1;
+    border-radius: 50%;
+}
+/* item collection styling */
+.item_collections_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    margin: 2rem 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0.39110854268074036px 1.1733256578445435px 1.955542802810669px 0px #00000024;
+}
+.item_collections_container h3{
+    text-align: right;
+    align-self: center;
+}
+.images{
+    position: relative;
+    align-self: center;
+}
+.img1{
+    position: relative;
+    left: 0;
+}
+.img2{
+    position: absolute;
+    left: 20px;
+}
+.img3{
+    position: absolute;
+    left: 40px;
+}
+.img4{
+    position: absolute;
+    left: 60px;
+}
+/* payment done styling */
+.payment_details{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0.39110854268074036px 1.1733256578445435px 1.955542802810669px 0px #00000024;
+}
+.content1{
+    display: flex;
+    justify-content: space-between;
+}
+.content1 img{
+    padding: 15px;
+    background-color: #39B54A;
+    border-radius: 50%;
+}
+.content1 h3{
+    align-self: center;
+    margin-left: 1rem;
+}
+.payment_details .fas{
+    color: #39B54A;
+}
+/* order detais styling */
+.order_details{
+    background-color: #fff;
+    border-radius: 10px;
+    padding-top: 2rem;
+    margin: 1rem 0;
+    box-shadow: 0.39110854268074036px 1.1733256578445435px 1.955542802810669px 0px #00000024;
+}
+hr{
+    border: 1px solid #DEDEDE;
+}
+.order_content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+.item_names p,.item_price p{
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #5A5A5A;
+}
+.order_total{
+    display: flex;
+    justify-content: space-between;
+    color: #3A3A3A;
+    margin: 3.1rem 0;
+    padding: 0 1rem;
+}
+.coupon{
+    padding: 3rem;
+    text-align: center;
+}
+.coupon input{
+    outline: none;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+}
+.coupon input::placeholder{
+    color: #C5C5C5;
+}
+.order_history_details{
+    background-color: #E8E8E8;
+    padding: 2rem 1rem;
+}
+.order_history_details p{
+    color: #ABABAB;
+    font-weight: 500;
+}
+.order_history_details .text_highlight{
+    color: #4E4E4E;
+    font-weight: 500;
+}
+/* final submit styling */
+.sumbit button{
+    margin: 2rem 0;
+    width: 100%;
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+    background: #39B54A;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+
+
+
+@media (min-width: 525px) and (max-width : 1400px){
+    /* progress */
+    .progress ul li .progress_icon::after{
+        width: 385px;
+    } 
+    ul li:last-child .progress_icon::after{
+        width: 0px;
+    }
+}
