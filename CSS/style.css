@@ -81,7 +81,7 @@ ul li:last-child .progress_icon::after{
 /* table styling */
 .items_container{
     background-color: #fff;
-    padding: 20px 5px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0.39110854268074036px 1.1733256578445435px 1.955542802810669px 0px #00000024;
 }
